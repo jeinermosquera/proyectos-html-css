@@ -1,0 +1,15 @@
+p {
+    color: red;
+    font-family: tahoma ;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+span {
+    text-decoration: line-through;
+    color: blue;
+}

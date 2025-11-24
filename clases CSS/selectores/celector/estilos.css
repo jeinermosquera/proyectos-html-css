@@ -1,0 +1,14 @@
+/* seleccion por clases*/
+.ingredientes-faltantes{
+    color: red;
+}
+
+/* seleccion por elementos*/
+li {
+    color: aqua;
+}
+
+/* seleccion por ID*/
+#ingrediente-secreto {
+    color: blue;
+}
