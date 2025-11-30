@@ -1,0 +1,319 @@
+/* ==========================================
+   BLOG DE ANIMALES - ESTILOS RESPONSIVE
+   ========================================== */
+
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+.contenedor {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* ==========================================
+   ARTÍCULOS
+   ========================================== */
+.post {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.post h2 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.descripcion {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.post img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido {
+    font-size: 1.05rem;
+    color: #555;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #5dade2;
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 1rem;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   MEDIA QUERIES - DISEÑO RESPONSIVE
+   ========================================== */
+
+/* Extra Small Devices - Móviles pequeños (menos de 576px) */
+@media (max-width: 575.98px) {
+    header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .subtitulo {
+        font-size: 0.9rem;
+    }
+    
+    header {
+        padding: 2rem 1rem;
+    }
+    
+    .contenedor {
+        padding: 0 0.75rem;
+        margin: 1.5rem auto;
+    }
+    
+    .post {
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+    }
+    
+    .post h2 {
+        font-size: 1.5rem;
+    }
+    
+    .descripcion {
+        font-size: 0.95rem;
+    }
+    
+    .contenido {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+    
+    footer {
+        padding: 1.5rem 1rem;
+    }
+    
+    footer a {
+        display: block;
+        margin: 0.75rem 0;
+        font-size: 1rem;
+    }
+}
+
+/* Small Devices - Móviles en horizontal (576px a 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+    header {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .contenedor {
+        padding: 0 1rem;
+        margin: 2rem auto;
+    }
+    
+    .post {
+        padding: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .post h2 {
+        font-size: 1.8rem;
+    }
+    
+    .descripcion {
+        font-size: 1rem;
+    }
+    
+    .contenido {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    footer a {
+        display: inline-block;
+        margin: 0 0.75rem;
+    }
+}
+
+/* Medium Devices - Tablets (768px a 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+    
+    .contenedor {
+        padding: 0 1.5rem;
+        margin: 2.5rem auto;
+    }
+    
+    .post {
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .post h2 {
+        font-size: 2rem;
+    }
+    
+    .contenido {
+        font-size: 1.02rem;
+    }
+}
+
+/* Large Devices - Escritorios (992px a 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header h1 {
+        font-size: 2.75rem;
+    }
+    
+    .contenedor {
+        max-width: 960px;
+    }
+    
+    .post {
+        padding: 2.25rem;
+    }
+    
+    .post h2 {
+        font-size: 2.1rem;
+    }
+}
+
+/* Extra Large Devices - Escritorios grandes (1200px a 1399px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .contenedor {
+        max-width: 1140px;
+    }
+    
+    .post {
+        padding: 2.5rem;
+    }
+    
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Ultra Large Devices - Pantallas muy grandes (1400px en adelante) */
+@media (min-width: 1400px) {
+    .contenedor {
+        max-width: 1320px;
+    }
+    
+    header h1 {
+        font-size: 3.5rem;
+    }
+    
+    .post h2 {
+        font-size: 2.4rem;
+    }
+    
+    .contenido {
+        font-size: 1.1rem;
+        line-height: 1.9;
+    }
+}

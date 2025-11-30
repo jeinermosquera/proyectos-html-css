@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi Primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;} 
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>producto</th>
+                <th>precio</th>
+        <tbody>
+            </tr>
+        </thead>
+        <tr>
+            <td>arroz</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>sal</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>arroz con pescado de mar</td>
+            <td>gratis</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total:5000$</td>
+        </tfoot>
+    </table>
+    <!--lista no ordenada-->
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+
+    </ul>
+    <!--lista ordenada-->
+    <ol>
+        <li value="50">elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+                <li style="list-style-type: lower-roman;">sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <h1>Mi primer heading</h1>
+    <form action="/formulario" method="post">
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" required>
+        <br>
+        <label for="apellido">apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="apellido">
+        <br>
+        <label for="comentario">comentario</label>
+        <textarea name="comentario" cols="50" rows="10" id="comentarios" placeholder="ingrese un comentario"></textarea>
+        <br>
+        <button type="button">tipo boton</button>
+        <button type="reset">tipo reset</button>
+        <button type="submit">tipo submit</button>
+
+    </form>
+
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuato heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>chachito feliz</h6>
+    <p>estoy muy feliz por que estoy aprendiendo algo nuevo</p>
+    <p>estoy my triste por que ya voy a entrar a clases</p>
+    <hr>
+    <!--la etiqueta <hr> sirve para dividir
+    en diferentes cesiones la pagina -->
+    <h2>cuarto semestre</h2>
+    <p>pero va a ser muy duro porque se vienen <span style="color:  blue;">materias mas duras</span> y proyectos mas               complicado<br><br> en todos los ambitos, pero nosotros podemos</p>
+    <!--este texto ess un comentario
+    y no va a aparecer en el explrador-->
+    <a target="_blank" href="https://www.google.com">ir a google</a>
+    <img src="img/animales.png" height="400" />
+</body>
+</html>
