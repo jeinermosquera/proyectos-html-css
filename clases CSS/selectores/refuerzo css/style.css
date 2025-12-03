@@ -1,0 +1,23 @@
+#titulo {
+    color:#FF5555 ;
+}
+
+p.texto {
+    color:#8FABD4;
+}
+
+p.especial {
+    color: mediumaquamarine;
+}
+div p {
+    color: aqua;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    color: black;
+}
