@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selva Viva - Conservación del Chocó</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegación -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="navbar" role="navigation">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">SelvaViva Chocó</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#biodiversidad" class="nav-link">Biodiversidad</a></li>
+                    <li><a href="#amenazas" class="nav-link">Amenazas</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#como-ayudar" class="nav-link">Cómo Ayudar</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="btn btn-secondary" aria-label="Modo selva/noche" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#donar" class="btn btn-primary">Donar Ahora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <main>
+        <section class="hero" id="inicio" role="region" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="badge">#SalvemosElChocó</span>
+                        <h1 id="hero-title">Protegiendo la <span class="highlight">biodiversidad única</span> del Chocó Biogeográfico</h1>
+                        <p class="lead">El Chocó alberga el 25% de la biodiversidad mundial. Únete a nuestra misión de conservar este tesoro natural para las futuras generaciones.</p>
+                        
+                        <div class="hero-actions">
+                            <a href="#donar" class="btn btn-primary btn-large">
+                                <i class="fas fa-hand-holding-heart"></i> Apoyar la Conservación
+                            </a>
+                            <a href="#proyectos" class="btn btn-outline">
+                                <i class="fas fa-seedling"></i> Ver Nuestros Proyectos
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">+8,000</span>
+                                <span class="stat-label">Especies endémicas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">45%</span>
+                                <span class="stat-label">Deforestación evitada</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">+500</span>
+                                <span class="stat-label">Animales rescatados</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="color-palette">
+                            <div class="palette-title">Colores de Nuestra Selva</div>
+                            <div class="palette-colors">
+                                <div class="color-card" style="background-color: #2d6a4f;" data-color="#2d6a4f">
+                                    <span>Selva</span>
+                                </div>
+                                <div class="color-card" style="background-color: #40916c;" data-color="#40916c">
+                                    <span>Vida</span>
+                                </div>
+                                <div class="color-card" style="background-color: #52b788;" data-color="#52b788">
+                                    <span>Renovación</span>
+                                </div>
+                                <div class="color-card" style="background-color: #ff9e00;" data-color="#ff9e00">
+                                    <span>Esperanza</span>
+                                </div>
+                                <div class="color-card" style="background-color: #1a759f;" data-color="#1a759f">
+                                    <span>Agua</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="device-mockup">
+                            <div class="device-screen">
+                                <div class="screen-content">
+                                    <div class="animal-slider">
+                                        <div class="animal-card active">
+                                            <div class="animal-name">Oso de Anteojos</div>
+                                            <div class="animal-status">En Peligro</div>
+                                        </div>
+                                        <div class="animal-card">
+                                            <div class="animal-name">Rana Dorada</div>
+                                            <div class="animal-status">Crítico</div>
+                                        </div>
+                                        <div class="animal-card">
+                                            <div class="animal-name">Jaguar</div>
+                                            <div class="animal-status">Vulnerable</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Biodiversidad -->
+        <section class="services" id="biodiversidad" role="region" aria-labelledby="biodiversity-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Tesoro Natural</span>
+                    <h2 id="biodiversity-title">Biodiversidad <span class="highlight">Única del Chocó</span></h2>
+                    <p class="section-description">Una de las regiones más biodiversas del planeta, hogar de especies que no existen en ningún otro lugar.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon" style="background-color: #e8f4fc;">
+                            <i class="fas fa-paw" style="color: #2d6a4f;"></i>
+                        </div>
+                        <h3>Fauna Endémica</h3>
+                        <p>El Chocó alberga más de 900 especies de aves, 200 mamíferos y 120 reptiles únicos en el mundo.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Oso de anteojos</li>
+                            <li><i class="fas fa-check"></i> Rana dorada venenosa</li>
+                            <li><i class="fas fa-check"></i> Mono tití del Chocó</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon" style="background-color: #f0e8fc;">
+                            <i class="fas fa-tree" style="color: #40916c;"></i>
+                        </div>
+                        <h3>Bosque Húmedo</h3>
+                        <p>El segundo bosque más lluvioso del mundo, con 8,000-9,000 mm de lluvia anual.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 3,000 especies de plantas</li>
+                            <li><i class="fas fa-check"></i> 600 especies de orquídeas</li>
+                            <li><i class="fas fa-check"></i> Árboles milenarios</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon" style="background-color: #fce8f1;">
+                            <i class="fas fa-water" style="color: #1a759f;"></i>
+                        </div>
+                        <h3>Ríos y Costas</h3>
+                        <p>Red de ríos que sostienen ecosistemas acuáticos únicos y comunidades locales.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Río Atrato</li>
+                            <li><i class="fas fa-check"></i> Manglares protectores</li>
+                            <li><i class="fas fa-check"></i> Especies acuáticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Amenazas -->
+        <section class="amenazas" id="amenazas" role="region" aria-labelledby="threats-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Alerta Roja</span>
+                    <h2 id="threats-title">Amenazas <span class="highlight">Inmediatas</span></h2>
+                    <p class="section-description">La biodiversidad del Chocó enfrenta peligros críticos que requieren acción inmediata.</p>
+                </div>
+                
+                <div class="threats-grid">
+                    <div class="threat-card threat-high">
+                        <div class="threat-icon">
+                            <i class="fas fa-skull-crossbones"></i>
+                        </div>
+                        <h3>Deforestación</h3>
+                        <p>20,000 hectáreas perdidas anualmente por minería ilegal y agricultura.</p>
+                        <div class="threat-level">
+                            <span class="level-label">Crítico</span>
+                            <div class="level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="threat-card threat-medium">
+                        <div class="threat-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Minería Ilegal</h3>
+                        <p>Contaminación por mercurio que afecta ríos y cadenas alimenticias.</p>
+                        <div class="threat-level">
+                            <span class="level-label">Alto</span>
+                            <div class="level-bar">
+                                <div class="level-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="threat-card threat-low">
+                        <div class="threat-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3>Tráfico de Especies</h3>
+                        <p>Comercio ilegal de fauna exótica que diezman poblaciones nativas.</p>
+                        <div class="threat-level">
+                            <span class="level-label">Medio</span>
+                            <div class="level-bar">
+                                <div class="level-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="portfolio" id="proyectos" role="region" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nuestra Acción</span>
+                    <h2 id="projects-title">Proyectos de <span class="highlight">Conservación Activa</span></h2>
+                </div>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="rescate">Rescate</button>
+                    <button class="filter-btn" data-filter="reforestacion">Reforestación</button>
+                    <button class="filter-btn" data-filter="educacion">Educación</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="rescate">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #2d6a4f, #52b788);">
+                            <div class="category-badge">Rescate</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Centro de Rescate Animal</h3>
+                            <p>Hemos rehabilitado y liberado más de 500 animales víctimas del tráfico ilegal.</p>
+                            <div class="portfolio-colors">
+                                <span class="color-dot" style="background-color: #2d6a4f;"></span>
+                                <span class="color-dot" style="background-color: #40916c;"></span>
+                                <span class="color-dot" style="background-color: #52b788;"></span>
+                                <span class="color-dot" style="background-color: #95d5b2;"></span>
+                            </div>
+                            <a href="#" class="portfolio-link">Ver impacto <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-category="reforestacion">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #1a759f, #40916c);">
+                            <div class="category-badge">Reforestación</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Corredores Biológicos</h3>
+                            <p>Hemos plantado 50,000 árboles nativos conectando fragmentos de bosque.</p>
+                            <div class="portfolio-colors">
+                                <span class="color-dot" style="background-color: #1a759f;"></span>
+                                <span class="color-dot" style="background-color: #168aad;"></span>
+                                <span class="color-dot" style="background-color: #34a0a4;"></span>
+                                <span class="color-dot" style="background-color: #52b788;"></span>
+                            </div>
+                            <a href="#" class="portfolio-link">Ver impacto <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-category="educacion">
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #ff9e00, #ffba08);">
+                            <div class="category-badge">Educación</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Educación Comunitaria</h3>
+                            <p>Capacitamos a 300 familias en agricultura sostenible y conservación.</p>
+                            <div class="portfolio-colors">
+                                <span class="color-dot" style="background-color: #ff9e00;"></span>
+                                <span class="color-dot" style="background-color: #ffba08;"></span>
+                                <span class="color-dot" style="background-color: #ffdd00;"></span>
+                                <span class="color-dot" style="background-color: #fdffb6;"></span>
+                            </div>
+                            <a href="#" class="portfolio-link">Ver impacto <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Cómo Ayudar -->
+        <section class="como-ayudar" id="como-ayudar" role="region" aria-labelledby="help-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Tu Acción Cuenta</span>
+                    <h2 id="help-title">Cómo <span class="highlight">Puedes Ayudar</span></h2>
+                </div>
+                
+                <div class="help-options">
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-donate"></i>
+                        </div>
+                        <h3>Donaciones</h3>
+                        <p>Cada $50 ayuda a plantar 10 árboles nativos.</p>
+                        <a href="#donar" class="btn btn-primary">Donar Ahora</a>
+                    </div>
+                    
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Voluntariado</h3>
+                        <p>Únete a nuestros programas de conservación in situ.</p>
+                        <a href="#voluntariado" class="btn btn-outline">Ser Voluntario</a>
+                    </div>
+                    
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Difusión</h3>
+                        <p>Comparte nuestra causa en redes sociales.</p>
+                        <button class="btn btn-outline share-btn">
+                            <i class="fas fa-share"></i> Compartir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Donación -->
+        <section class="contact" id="donar" role="region" aria-labelledby="donate-title">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 id="donate-title">Tu donación <span class="highlight">salva vidas</span></h2>
+                        <p>Cada contribución nos permite rescatar animales, reforestar hectáreas y educar comunidades. Sé parte del cambio.</p>
+                        
+                        <div class="donation-impact">
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <div>
+                                    <h4>$25 = 5 Árboles</h4>
+                                    <p>Planta árboles nativos</p>
+                                </div>
+                            </div>
+                            
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div>
+                                    <h4>$100 = 1 Rescate</h4>
+                                    <p>Rehabilita un animal</p>
+                                </div>
+                            </div>
+                            
+                            <div class="impact-item">
+                                <div class="impact-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4>$200 = Taller</h4>
+                                    <p>Educa a una familia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="donationForm" aria-labelledby="donate-title">
+                            <h3>Haz tu donación</h3>
+                            
+                            <div class="donation-amounts">
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn active" data-amount="100">$100</button>
+                                <button type="button" class="amount-btn" data-amount="200">$200</button>
+                                <button type="button" class="amount-btn" data-amount="500">$500</button>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customAmount">Otra cantidad (USD)</label>
+                                <input type="number" id="customAmount" min="1" placeholder="Ej: 75">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorName">Nombre completo *</label>
+                                <input type="text" id="donorName" required>
+                                <div class="form-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorEmail">Email *</label>
+                                <input type="email" id="donorEmail" required>
+                                <div class="form-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Dedicación (opcional)</label>
+                                <textarea id="dedication" rows="2" placeholder="En honor/memoria de..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-heart"></i> Donar Ahora
+                            </button>
+                            
+                            <p class="form-note">Tu donación es 100% segura y deducible de impuestos.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🌿</span>
+                        <span class="logo-text">SelvaViva Chocó</span>
+                    </a>
+                    <p>Trabajando desde 2010 para conservar la biodiversidad única del Chocó biogeográfico.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#biodiversidad">Biodiversidad</a></li>
+                        <li><a href="#amenazas">Amenazas</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#como-ayudar">Cómo Ayudar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Quibdó, Chocó, Colombia</li>
+                        <li><i class="fas fa-phone"></i> +57 314 789 0123</li>
+                        <li><i class="fas fa-envelope"></i> info@selvavivachoco.org</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Boletín de Conservación</h4>
+                    <p>Recibe actualizaciones sobre nuestros proyectos y alertas ambientales.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 SelvaViva Chocó. Todos los derechos reservados. | <a href="#">Política de privacidad</a></p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de emergencia -->
+    <a href="#donar" class="emergency-btn">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>¡Ayuda Urgente!</span>
+    </a>
+    
+    <!-- Botón de accesibilidad -->
+    <button class="accessibility-btn" id="accessibilityToggle" aria-label="Opciones de accesibilidad">
+        <i class="fas fa-universal-access"></i>
+    </button>
+    
+    <div class="accessibility-panel" id="accessibilityPanel">
+        <h4>Opciones de Accesibilidad</h4>
+        <div class="accessibility-option">
+            <span>Tamaño de texto</span>
+            <div class="text-size-controls">
+                <button id="decreaseText" aria-label="Disminuir tamaño de texto">A-</button>
+                <button id="resetText" aria-label="Tamaño de texto normal">A</button>
+                <button id="increaseText" aria-label="Aumentar tamaño de texto">A+</button>
+            </div>
+        </div>
+        <div class="accessibility-option">
+            <span>Modo alto contraste</span>
+            <label class="switch">
+                <input type="checkbox" id="highContrastToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
