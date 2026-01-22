@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfume | Discover the Essence of Luxury</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #f5f1ec;
+            --bg-white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-gray: #555;
+            --accent: #c9a44c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+        }
+
+        /* ===== NAVBAR ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            gap: 50px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--text-dark);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+        }
+
+        .hero-img img {
+            width: 320px;
+            border-radius: 20px;
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products {
+            background-color: var(--bg-white);
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background-color: var(--bg-main);
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-card span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">PERFUME</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Perfume</h1>
+            <p>Discover the essence of luxury with exclusive fragrances designed for elegance and passion.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155228c9a5" alt="Perfume">
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <h2>Featured Products</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="">
+                <h3>Rose Elegance</h3>
+                <span>$89</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="">
+                <h3>Golden Oud</h3>
+                <span>$120</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de" alt="">
+                <h3>Soft Blossom</h3>
+                <span>$75</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 PERFUME — Luxury Fragrances
+    </footer>
+
+</body>
+</html>
